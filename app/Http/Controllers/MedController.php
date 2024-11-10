@@ -10,6 +10,15 @@ use App\Models\Category;
 class MedController extends Controller
 {
 
+    public function displayMeds()
+    {
+        // Get the first 5 medicines
+        $medicines = Med::take(5)->get();
+
+        // Return the landing page view with the medicines data
+        return view('welcome', compact('medicines'));
+    }
+
     public function storePage(Request $request)
     {
         $userId = $request->input('user_id');

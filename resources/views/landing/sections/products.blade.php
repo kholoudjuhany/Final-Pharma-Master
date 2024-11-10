@@ -9,32 +9,17 @@
           <div class="col-md-12 block-3 products-wrap">
             <div class="nonloop-block-3 owl-carousel">
 
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="assets/landing/images/product_03.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="assets/landing/images/product_01.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="assets/landing/images/product_02.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="assets/landing/images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
+              @foreach ($medicines as $medicine)
+                <div class="text-center item mb-4">
+                  <!-- Dynamically use the medicine image from the database -->
+                  <img src="{{ asset('storage/' . $medicine->med_img) }}" alt="Image" style="height: 500px; object-fit: cover;">
+                  <h3 class="text-dark" id="product-name">{{ $medicine->med_name }}</h3>
+                  <p class="price">${{ $medicine->med_price }}</p>
+                </div>
+              @endforeach
 
             </div>
           </div>
         </div>
       </div>
-    </div>
+</div>

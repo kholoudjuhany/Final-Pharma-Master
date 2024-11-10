@@ -16,12 +16,15 @@
                 <div class="site-section-heading pt-3 mb-4">
                     <h2 class="text-black">How We Started</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat, dicta at laboriosam, nemo
-                exercitationem itaque eveniet architecto cumque, deleniti commodi molestias repellendus quos sequi hic fugiat
-                asperiores illum. Atque, in, fuga excepturi corrupti error corporis aliquam unde nostrum quas.</p>
+                <p>Founded with a commitment to making healthcare accessible to all, 
+                    we started with the simple belief that everyone deserves convenient, 
+                    reliable access to their medications.
+                    With healthcare needs changing rapidly, we were inspired to embrace technology early on. 
+                </p>
                 
-                <p>Accusantium dolor ratione maiores est deleniti nihil? Dignissimos est, sunt nulla illum autem in, quibusdam
-                cumque recusandae, laudantium minima repellendus.</p>
+                <p>As a one big family, Today, we bring those values online, providing 
+                    attentive service you can trust.
+                </p>
             </div>
         </div>
     </div>
@@ -36,9 +39,11 @@
                 </div>
                 
                 <div class="text">
-                    <h2>Free Shipping</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                    tincidunt fringilla.</p>
+                    <h2>Fast Delivery</h2>
+                    <p>Get your medications and delivered quickly and securely. 
+                        With our efficient delivery service, you can expect fast shipping, 
+                        so your order arrives right when you need it—without the wait.
+                    </p>
                 </div>
             </div>
             
@@ -49,8 +54,10 @@
                 
                 <div class="text">
                     <h2>Free Returns</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                    tincidunt fringilla.</p>
+                    <p>We're committed to ensuring you're fully satisfied with your purchase. 
+                        If something isn't right, simply contact our support team, 
+                        and we'll guide you through the quick return process—no stress, no extra cost.
+                    </p>
                 </div>
             </div>
             
@@ -61,8 +68,9 @@
                 
                 <div class="text">
                     <h2>Customer Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-                    tincidunt fringilla.</p>
+                    <p>Our dedicated customer support team is here for you, Whether you have questions about 
+                        your order, need help with a product, or require expert advice, we're just a call away.
+                    </p>
                 </div>
             </div>
         </div>

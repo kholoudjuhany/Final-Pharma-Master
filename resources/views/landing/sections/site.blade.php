@@ -4,10 +4,10 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-primary h-100">
               <a href="#" class="h-100">
-                <h5>Free <br> Shipping</h5>
+                <h5>Easy Prescription<br> Upload</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  Upload prescription directly
+                  <strong>and place orders with just a few clicks!</strong>
                 </p>
               </a>
             </div>
@@ -15,10 +15,10 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap h-100">
               <a href="#" class="h-100">
-                <h5>Season <br> Sale 50% Off</h5>
+                <h5>Instant Order<br> Confirmation</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  Immediate confirmation of your order
+                  <strong>Make your experience fast and seamless.</strong>
                 </p>
               </a>
             </div>
@@ -26,10 +26,10 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-warning h-100">
               <a href="#" class="h-100">
-                <h5>Buy <br> A Gift Card</h5>
+                <h5>Fast <br> Delivery</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  Get your medications delivered
+                  <strong>straight to your door safely and quickly.</strong>
                 </p>
               </a>
             </div>

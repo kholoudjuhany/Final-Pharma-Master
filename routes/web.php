@@ -21,9 +21,7 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MedController::class, 'displayMeds']);
 
 
 Auth::routes();
