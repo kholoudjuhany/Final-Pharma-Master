@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="h3 mb-5 text-black">Welcome to the Main Page</h2>
+                <h2 class="h3 mb-5 text-black">Welcome to PHARMA</h2>
             </div>
         </div>
 
@@ -16,12 +16,12 @@
         <!-- Check if a prescription exists and its status -->
         @if(isset($prescription) && $prescription->status !== 'cancelled')
             @if($prescription->status === 'completed')
-                <p class="mb-4">Thank You! Your Order is on the way.</p>
+                <p class="mb-4 text-success" style="font-size: 1.25rem;">Thank You! Your Order is on the way.</p>
             @elseif($prescription->status === 'sent')
-                <p class="mb-4">Your prescription has been sent! Complete your Order.</p>
+                <p class="mb-4 text-info" style="font-size: 1.25rem;">Your prescription has been sent! Complete your Order.</p>
                 <a href="{{ route('prescriptions.bill', $prescription->id) }}" class="btn btn-primary">View Bill</a>
             @elseif($prescription->status === 'pending')
-                <p class="mb-4">Your prescription request is sent! Please wait 10-20 minutes for processing.</p>
+                <p class="mb-4 text-warning" style="font-size: 1.25rem;">Your prescription request is sent! Please wait 10-20 minutes for processing.</p>
             @else
                 <p class="mb-4">Your prescription status is: {{ $prescription->status }}.</p>
             @endif
@@ -49,6 +49,7 @@
     </div>
 </div>
 @endsection
+
 
 
 

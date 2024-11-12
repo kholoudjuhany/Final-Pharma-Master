@@ -43,5 +43,6 @@
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous" defer></script>
         <script src="{{ asset('assets/dashboard/js/datatables-simple-demo.js') }}" defer></script>
         <script src="{{ asset('assets/dashboard/js/delete.js') }}" defer></script>
+
     </body>
 </html>

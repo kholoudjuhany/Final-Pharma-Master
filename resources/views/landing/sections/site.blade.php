@@ -1,4 +1,4 @@
-<div class="site-section">
+<div class="site-section bg-light">
       <div class="container">
         <div class="row align-items-stretch section-overlap">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">

@@ -9,6 +9,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\PrescriptionController;
 use App\Http\Controllers\PreMedController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,9 +55,7 @@ Route::resource('prescriptions', PrescriptionController::class);
 
 Route::get('/requests', [PrescriptionController::class, 'requests'])->name('requests.index');
 
-Route::get('/dashboard', function () {
-    return view('dashWelcome');
-})->name('dashboard');
+Route::get('/dashboard', [Dashboard::class, 'dashboard'])->name('dashboard');
 
 
 Route::resource('premeds', PreMedController::class);

@@ -1,4 +1,4 @@
-<div class="site-section bg-light">
+<div class="site-section" id="products">
     <div class="container">
         <div class="row">
           <div class="title-section text-center col-12">

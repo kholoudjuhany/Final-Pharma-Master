@@ -1,4 +1,4 @@
-<div class="site-section bg-light custom-border-bottom" data-aos="fade">
+<div class="site-section custom-border-bottom" data-aos="fade" id="about">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6">
@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<div class="site-section site-section-sm site-blocks-1 border-0" data-aos="fade">
+<div class="site-section site-section-sm site-blocks-1 border-0 bg-light" data-aos="fade">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">

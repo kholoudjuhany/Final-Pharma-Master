@@ -2,23 +2,21 @@
 <html lang="en">
 
 <head>
-  <title>Pharma &mdash; Colorlib Template</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pharma &mdash; Colorlib Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="assets/landing/fonts/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/landing/fonts/icomoon/style.css') }}">
 
-  <link rel="stylesheet" href="assets/landing/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/landing/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/landing/css/jquery-ui.css">
-  <link rel="stylesheet" href="assets/landing/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/landing/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/owl.theme.default.min.css') }}">
 
-
-  <link rel="stylesheet" href="assets/landing/css/aos.css">
-
-  <link rel="stylesheet" href="assets/landing/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/landing/css/style.css') }}">
 
 </head>
 
@@ -58,13 +56,13 @@
         </main>
         @include('includes.footer')
     </div>
-    <script src="assets/landing/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/landing/js/jquery-ui.js"></script>
-    <script src="assets/landing/js/popper.min.js"></script>
-    <script src="assets/landing/js/bootstrap.min.js"></script>
-    <script src="assets/landing/js/owl.carousel.min.js"></script>
-    <script src="assets/landing/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/landing/js/aos.js"></script>
-    <script src="assets/landing/js/main.js"></script>
+    <script src="{{ asset('assets/landing/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/jquery-ui.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/aos.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/main.js') }}"></script>
 </body>
 </html>

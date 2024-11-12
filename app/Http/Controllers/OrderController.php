@@ -37,11 +37,23 @@ class OrderController extends Controller
         $totalPrice = 0;
         foreach ($prescription->premeds as $premed) {
             $totalPrice += $premed->med->med_price * $premed->quantity;
+
+            // Decrease the quantity of each medicine in the meds table
+            $med = $premed->med;
+            $med->med_quantity -= $premed->quantity;
+
+            // Ensure quantity does not go below zero
+            if ($med->med_quantity < 0) {
+                $med->med_quantity = 0;
+            }
+
+            // Save the updated quantity to the database
+            $med->save();
         }
 
         // Apply discount if applicable
         $discount = $prescription->user->hic->HIC_disscount ?? 0;
-        $discountedPrice = $totalPrice * (1-$discount);
+        $discountedPrice = $totalPrice * (1 - $discount);
 
         // Store the order with the discounted price
         Order::create([
@@ -52,7 +64,7 @@ class OrderController extends Controller
         ]);
 
         // Update the prescription status to 'completed'
-        $prescription->update(['status' => 'completed']);  // Use update to set only the status field
+        $prescription->update(['status' => 'completed']);
 
         // Clear session data for the active prescription
         session()->forget('active_prescription');
@@ -63,6 +75,7 @@ class OrderController extends Controller
 
     return redirect()->route('main')->with('error', 'Failed to complete the order.');
 }
+
 
 
 

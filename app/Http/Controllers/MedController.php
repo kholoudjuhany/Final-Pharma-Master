@@ -24,13 +24,43 @@ class MedController extends Controller
         $userId = $request->input('user_id');
         session()->put('active_user_id', $userId);
 
-        // Retrieve all medicines and categories
-        $medicines = Med::all();
-        $categories = Category::all(); // Make sure to replace 'Category' with your actual model name for categories
+        // Retrieve the search input from the request
+        $search = $request->input('search');
+        $categoryId = $request->input('cat_id'); // Get the selected category
+
+        // Retrieve medicines, filter by search term and category if provided
+        $medicines = Med::query();
+
+        // Apply search filter if there is a search term
+        if ($search) {
+            $medicines->where('med_name', 'like', '%' . $search . '%');
+        }
+
+        // Apply category filter if a category is selected (not empty)
+        if ($categoryId) {
+            $medicines->where('cat_id', $categoryId);
+        }
+
+        // Order medicines: prioritize lower quantities first
+        $medicines = $medicines->orderByRaw('med_quantity < 150 DESC, med_quantity ASC')->get();
+
+        // Retrieve all categories
+        $categories = Category::all();
+
+        // Check if the request is AJAX and return only the medicine list as HTML
+        if ($request->ajax()) {
+            return response()->json([
+                'medicines' => view('dashboard.medicines_partial', compact('medicines'))->render(),
+            ]);
+        }
 
         // Pass both medicines and categories to the view
-        return view('dashboard.medicines_store', compact('medicines', 'categories'));
+        return view('dashboard.medicines_store', compact('medicines', 'categories', 'categoryId'));
     }
+
+
+
+
 
 
 
